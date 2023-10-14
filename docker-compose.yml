@@ -1,0 +1,21 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:latest
+    container_name: my_postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: Ekinoks
+      POSTGRES_USER: ekinoks
+      POSTGRES_PASSWORD: ekinoks123
+
+  postgres-test:
+    image: postgres:latest
+    container_name: my_postgres_test
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: EkinoksTest
+      POSTGRES_USER: ekinokstest
+      POSTGRES_PASSWORD: test123
