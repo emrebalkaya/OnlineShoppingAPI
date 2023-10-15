@@ -27,6 +27,7 @@
    },
    "scripts": {
       "start": "ts-node src/index.ts",
+      "build": "tsc",
       "typeorm": "typeorm-ts-node-commonjs",
       "test": "NODE_ENV=test jest --detectOpenHandles"
    },
@@ -34,6 +35,9 @@
       "transform": {
          "^.+\\.tsx?$": "ts-jest"
       },
-      "testEnvironment": "node"
+      "testEnvironment": "node",
+      "testPathIgnorePatterns": [
+         "/build/"
+      ]
    }
 }

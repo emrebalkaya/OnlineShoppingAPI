@@ -8,8 +8,8 @@ export const isTestEnvironment = process.env.NODE_ENV === "test";
 
 export const AppDataSource = new DataSource({
     type: "postgres",
-    host: "localhost",
-    port: isTestEnvironment ? 5433 : 5432,
+    host: isTestEnvironment ? "postgres-test" : "postgres",
+    port: 5432,
     username: isTestEnvironment ? "ekinokstest" : "ekinoks",
     password: isTestEnvironment ? "test123" : "ekinoks123",
     database: isTestEnvironment ? "EkinoksTest": "Ekinoks",

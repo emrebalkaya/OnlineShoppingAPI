@@ -87,7 +87,6 @@ describe('OrderController', () => {
 
       expect(firstOrder.customerId).toEqual(customers[0].id);
       expect(firstOrder.totalAmount).toBe(5000);
-
       expect(secondOrder.customerId).toEqual(customers[1].id);
       expect(secondOrder.totalAmount).toBe(2000);
     });

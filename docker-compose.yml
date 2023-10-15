@@ -9,7 +9,6 @@ services:
       POSTGRES_DB: Ekinoks
       POSTGRES_USER: ekinoks
       POSTGRES_PASSWORD: ekinoks123
-
   postgres-test:
     image: postgres:latest
     container_name: my_postgres_test
@@ -19,3 +18,10 @@ services:
       POSTGRES_DB: EkinoksTest
       POSTGRES_USER: ekinokstest
       POSTGRES_PASSWORD: test123
+  app:
+    image: emrebalkaya/api:latest
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+    command: ["sh", "-c", "npm test && npm start"]

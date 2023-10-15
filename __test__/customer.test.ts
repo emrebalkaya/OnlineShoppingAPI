@@ -51,7 +51,7 @@ describe('CustomerController', () => {
 
   describe('POST /login', () => {
     it('should successfully log in a user', async () => {
-      const testCustomer = await customerRepository.save({
+      await customerRepository.save({
         firstName: 'John',
         lastName: 'Doe',
         email: 'john.doe2@example.com',
