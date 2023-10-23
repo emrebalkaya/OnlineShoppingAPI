@@ -1,4 +1,4 @@
-# Ekinoks API
+# Online Shopping API
 
 This API is designed to support an online shopping platorm, providing a range of key functionalities to facilitate customer interaction and product management.
 
