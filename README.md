@@ -62,7 +62,7 @@ This API is designed to support an online shopping platorm, providing a range of
 
 ## Request Logging
 
-The Ekinoks API logs incoming requests for auditing and debugging purposes. Each log entry includes the following information:
+The API logs incoming requests for auditing and debugging purposes. Each log entry includes the following information:
 
 1. level: The log level(e.g.,"info").
 2. message: A message describing the request, including the source IP address, endpoint, and timestamp.
